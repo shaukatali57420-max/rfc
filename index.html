@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RFC | Healthy Food • Healthy Life</title>
+<meta name="description" content="RFC — Healthy Food, Healthy Life. Order crispy zingers, burgers, shawarma, rolls and family deals for takeaway, dine-in or delivery.">
+<link rel="icon" href="assets/images/rfc-logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<meta property="og:title" content="RFC | Healthy Food • Healthy Life">
+<meta property="og:description" content="RFC — Healthy Food, Healthy Life. Order crispy zingers, burgers, shawarma, rolls and family deals for takeaway, dine-in or delivery.">
+<meta property="og:image" content="assets/images/gallery-storefront.png">
+<meta property="og:type" content="restaurant">
+</head>
+<body>
+
+<!-- ===== LOADER ===== -->
+<div class="loader" id="loader">
+  <div class="loader-badge"></div>
+  <p class="loader-text">RFC</p>
+</div>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar" id="navbar">
+  <a href="#home" class="nav-logo">
+    <img src="assets/images/rfc-logo.jpg" alt="RFC logo">
+    <span class="nav-logo-text">RFC<span>Healthy Food • Healthy Life</span></span>
+  </a>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#menu" class="nav-link">Menu</a>
+    <a href="#menu" class="nav-link" data-cat-jump="Deals">Deals</a>
+    <a href="#gallery" class="nav-link">Gallery</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#testimonials" class="nav-link">Testimonials</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </nav>
+
+  <div class="nav-actions">
+    <button class="icon-btn" id="loginBtn" aria-label="Login">👤</button>
+    <button class="icon-btn" id="cartBtn" aria-label="Open cart">
+      🛒<span class="cart-count" id="cartCount">0</span>
+    </button>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="hero-media">
+    <video id="heroVideo" autoplay muted loop playsinline poster="assets/images/gallery-storefront.png">
+      <source src="assets/video/hero.mp4" type="video/mp4">
+    </video>
+    <div class="hero-fallback" id="heroFallback"></div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-badge reveal-scale">
+      <img src="assets/images/rfc-logo.jpg" alt="RFC">
+    </div>
+    <h1 class="hero-title reveal-scale">
+      <span class="accent-gold">HEALTHY</span> FOOD<br>
+      <span class="accent-red">HEALTHY</span> LIFE
+    </h1>
+    <p class="hero-tagline reveal-scale">Takeaway <span class="dot">•</span> Dine In <span class="dot">•</span> Delivery</p>
+    <div class="hero-actions reveal-scale">
+      <a href="#menu" class="btn btn-gold">Order Online</a>
+      <a href="#menu" class="btn btn-outline">Explore Menu</a>
+      <a href="#reservation" class="btn btn-outline">Reserve Table</a>
+      <a href="https://wa.me/923146000070" target="_blank" rel="noopener" class="btn btn-red">WhatsApp Order</a>
+    </div>
+  </div>
+
+  <div class="hero-scroll"><span></span><p>Scroll</p></div>
+</section>
+
+<div class="heat-divider" data-heat></div>
+
+<!-- ===== DELIVERY SECTION ===== -->
+<section class="delivery" id="delivery">
+  <div class="container">
+    <p class="eyebrow center reveal">Ways To RFC</p>
+    <h2 class="section-title center reveal">Fast, Fresh, Wherever You Are</h2>
+    <p class="section-sub center reveal">Order straight from the kitchen — no matter how you like it served.</p>
+
+    <div class="delivery-banner reveal-scale">
+      <img src="assets/images/gallery-burger-sauce.png" alt="RFC crispy chicken burger drizzled with signature sauce">
+      <div class="banner-copy">
+        <h3>Fast Delivery, Cash on Delivery</h3>
+        <p>Open 11 AM – Midnight, every day. Hot off the grill and on your table fast.</p>
+      </div>
+    </div>
+
+    <div class="delivery-grid">
+      <div class="delivery-card reveal">
+        <div class="delivery-icon">🥡</div>
+        <h3>Takeaway</h3>
+        <p>Order ahead and skip the wait — hot and ready at pickup.</p>
+      </div>
+      <div class="delivery-card reveal">
+        <div class="delivery-icon">🛵</div>
+        <h3>Delivery</h3>
+        <p>Delivered fast, straight to your door, across the city.</p>
+      </div>
+      <div class="delivery-card reveal">
+        <div class="delivery-icon">🍽️</div>
+        <h3>Dine In</h3>
+        <p>Pull up a seat and enjoy the full RFC experience in-store.</p>
+      </div>
+    </div>
+
+    <div class="delivery-actions reveal">
+      <span class="delivery-phone">📞 0314-600-00-70</span>
+      <a href="tel:+923146000070" class="btn btn-outline">Call to Order</a>
+      <a href="https://wa.me/923146000070" target="_blank" rel="noopener" class="btn btn-gold">Order on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<div class="heat-divider" data-heat></div>
+
+<!-- ===== MENU SECTION ===== -->
+<section class="menu-section" id="menu">
+  <div class="container">
+    <p class="eyebrow center reveal">The Menu</p>
+    <h2 class="section-title center reveal">Every Craving, Covered</h2>
+    <p class="section-sub center reveal">From zinger classics to family feasts — search, filter, and build your order below.</p>
+
+    <div class="menu-toolbar">
+      <div class="menu-search reveal">
+        <input type="text" id="menuSearch" placeholder="Search the menu — burgers, shawarma, fries…">
+      </div>
+      <div class="category-scroll reveal" id="categoryScroll"></div>
+    </div>
+
+    <p class="menu-empty" id="menuEmpty">No dishes match your search. Try a different keyword or category.</p>
+    <div class="menu-grid" id="menuGrid"></div>
+  </div>
+</section>
+
+<!-- Cart overlay + drawer -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+  <div class="cart-header">
+    <h3>Your Order</h3>
+    <button class="cart-close" id="cartClose" aria-label="Close cart">&times;</button>
+  </div>
+  <div class="cart-items" id="cartItems">
+    <p class="cart-empty">Your cart is empty. Add something delicious from the menu.</p>
+  </div>
+  <div class="cart-summary" id="cartSummary" style="display:none;">
+    <div class="cart-row"><span>Subtotal</span><span id="cartSubtotal">Rs. 0</span></div>
+    <div class="cart-row"><span>Delivery Fee</span><span id="cartDelivery">Rs. 100</span></div>
+    <div class="cart-row total"><span>Total</span><span id="cartTotal">Rs. 0</span></div>
+    <button class="btn btn-gold btn-full" id="checkoutBtn" style="margin-top:1rem;">Checkout</button>
+    <p class="form-note" id="checkoutNote"></p>
+  </div>
+</aside>
+
+<div class="heat-divider" data-heat></div>
+
+<!-- ===== GALLERY ===== -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <p class="eyebrow center reveal">Inside RFC</p>
+    <h2 class="section-title center reveal">A Taste Of The Kitchen</h2>
+    <p class="section-sub center reveal">A look at what leaves our grill every day.</p>
+
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <img src="" alt="" id="lightboxImg">
+</div>
+
+<div class="heat-divider" data-heat></div>
+
+<!-- ===== ABOUT ===== -->
+<section class="about" id="about">
+  <div class="container reservation-grid">
+    <div class="reservation-copy">
+      <p class="eyebrow reveal">Our Story</p>
+      <h2 class="reveal">Healthy Food. Honest Ingredients.</h2>
+      <p class="reveal">
+        RFC was built on one idea: fast food doesn't have to mean careless food.
+        Every fillet is hand-breaded, every roll wrapped to order, and every deal
+        priced to feed real families without cutting corners on flavour.
+      </p>
+      <ul class="reservation-points reveal">
+        <li>Fresh chicken, breaded and fried to order</li>
+        <li>No pre-made stockpiles — everything is cooked on demand</li>
+        <li>Serving Gulgasht Colony, Multan, since day one</li>
+      </ul>
+    </div>
+    <div class="about-media reveal-scale">
+      <img src="assets/images/gallery-storefront.png" alt="RFC storefront signage" class="about-media-main">
+      <img src="assets/images/gallery-interior.png" alt="RFC dine-in seating area" class="about-media-sub">
+    </div>
+  </div>
+</section>
+
+<div class="heat-divider" data-heat></div>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <p class="eyebrow center reveal">Guest Reviews</p>
+    <h2 class="section-title center reveal">What Multan Is Saying</h2>
+
+    <div class="testimonial-track">
+      <div class="testimonial-slide active">
+        <p class="testimonial-stars">★★★★★</p>
+        <p class="testimonial-text">The zinger burger is the best I've had in Gulgasht — crispy, never greasy, and the deals actually feed the whole family.</p>
+        <div class="testimonial-person">
+          <div class="testimonial-avatar">HA</div>
+          <div>
+            <p class="testimonial-name">Hassan Ali</p>
+            <p class="testimonial-role">Regular Customer</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-slide">
+        <p class="testimonial-stars">★★★★★</p>
+        <p class="testimonial-text">Ordered the family deal for a get-together — hot, on time, and generous portions. RFC is our go-to now.</p>
+        <div class="testimonial-person">
+          <div class="testimonial-avatar">SM</div>
+          <div>
+            <p class="testimonial-name">Sana Malik</p>
+            <p class="testimonial-role">Delivery Customer</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-slide">
+        <p class="testimonial-stars">★★★★☆</p>
+        <p class="testimonial-text">Shawarma rolls are packed generously and the WhatsApp ordering is genuinely the fastest way to order in the area.</p>
+        <div class="testimonial-person">
+          <div class="testimonial-avatar">UF</div>
+          <div>
+            <p class="testimonial-name">Usman Farooq</p>
+            <p class="testimonial-role">Takeaway Customer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-dots" id="testimonialDots"></div>
+  </div>
+</section>
+
+<div class="heat-divider" data-heat></div>
+
+<!-- ===== RESERVATION ===== -->
+<section class="reservation" id="reservation">
+  <div class="container reservation-grid">
+    <div class="reservation-copy">
+      <p class="eyebrow reveal">Dine In</p>
+      <h2 class="reveal">Reserve Your Table</h2>
+      <p class="reveal">Planning to eat in? Book ahead and we'll have your table ready.</p>
+      <ul class="reservation-points reveal">
+        <li>Confirmation within minutes over call or WhatsApp</li>
+        <li>Free for groups of any size</li>
+        <li>Let us know any special requests in advance</li>
+      </ul>
+    </div>
+
+    <form class="res-form reveal" id="reservationForm" novalidate>
+      <div class="form-row">
+        <div class="form-group" data-field="name">
+          <label for="resName">Full Name</label>
+          <input type="text" id="resName" name="name">
+          <p class="field-error">Please enter your name.</p>
+        </div>
+        <div class="form-group" data-field="phone">
+          <label for="resPhone">Phone Number</label>
+          <input type="tel" id="resPhone" name="phone">
+          <p class="field-error">Please enter a valid phone number.</p>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group" data-field="date">
+          <label for="resDate">Date</label>
+          <input type="date" id="resDate" name="date">
+          <p class="field-error">Please choose a date.</p>
+        </div>
+        <div class="form-group" data-field="time">
+          <label for="resTime">Time</label>
+          <input type="time" id="resTime" name="time">
+          <p class="field-error">Please choose a time.</p>
+        </div>
+      </div>
+      <div class="form-group" data-field="guests">
+        <label for="resGuests">Number of Guests</label>
+        <select id="resGuests" name="guests">
+          <option value="">Select party size</option>
+          <option>2 Guests</option>
+          <option>4 Guests</option>
+          <option>6 Guests</option>
+          <option>8+ Guests</option>
+        </select>
+        <p class="field-error">Please select the number of guests.</p>
+      </div>
+      <div class="form-group">
+        <label for="resNote">Special Request (optional)</label>
+        <textarea id="resNote" name="note" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-gold btn-full">Confirm Reservation</button>
+      <p class="form-note" id="resFormNote"></p>
+    </form>
+  </div>
+</section>
+
+<div class="heat-divider" data-heat></div>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact" id="contact">
+  <div class="container">
+    <p class="eyebrow center reveal">Get In Touch</p>
+    <h2 class="section-title center reveal">Find Us In Gulgasht</h2>
+
+    <div class="contact-grid" style="margin-top:2.5rem;">
+      <div class="contact-map reveal">
+        <iframe
+          src="https://www.google.com/maps?q=Gulgasht%20Colony%2C%20Multan&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="RFC location map">
+        </iframe>
+      </div>
+
+      <div class="contact-info reveal">
+        <div class="contact-block">
+          <h4>Address</h4>
+          <p>RFC — Gulgasht Colony, Multan, Pakistan</p>
+        </div>
+        <div class="contact-block">
+          <h4>Phone &amp; WhatsApp</h4>
+          <p>UAN: 0314-600-00-70</p>
+        </div>
+        <div class="contact-block">
+          <h4>Business Hours</h4>
+          <div class="hours-table">
+            <div class="hours-row"><span>Monday – Thursday</span><span>11:00 AM – 11:59 PM</span></div>
+            <div class="hours-row"><span>Friday</span><span>11:00 AM–1:15 PM, 2:15–11:59 PM</span></div>
+            <div class="hours-row"><span>Saturday – Sunday</span><span>11:00 AM – 11:59 PM</span></div>
+          </div>
+        </div>
+        <div class="contact-block">
+          <h4>Follow Us</h4>
+          <div class="contact-socials">
+            <a href="#" class="icon-btn" aria-label="Facebook">f</a>
+            <a href="#" class="icon-btn" aria-label="Instagram">◎</a>
+            <a href="#" class="icon-btn" aria-label="TikTok">♪</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <div class="footer-brand">
+          <img src="assets/images/rfc-logo.jpg" alt="RFC">
+          <span>RFC</span>
+        </div>
+        <p>Healthy Food • Healthy Life. Serving Gulgasht Colony, Multan with crispy classics and family-sized deals since day one.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">◎</a>
+          <a href="#" aria-label="TikTok">♪</a>
+        </div>
+      </div>
+
+      <div>
+        <h5>Quick Links</h5>
+        <div class="footer-links">
+          <a href="#menu">Menu</a>
+          <a href="#menu" data-cat-jump="Deals">Deals</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#reservation">Reservations</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div>
+        <h5>Opening Hours</h5>
+        <div class="footer-hours">
+          <p>Mon – Thu: 11 AM – 11:59 PM</p>
+          <p>Friday: 11 AM–1:15 PM, 2:15–11:59 PM</p>
+          <p>Sat – Sun: 11 AM – 11:59 PM</p>
+        </div>
+      </div>
+
+      <div>
+        <h5>Newsletter</h5>
+        <p style="color:var(--gray); font-size:.88rem;">Get new deals before anyone else.</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="Your email" required aria-label="Email for newsletter">
+          <button type="submit">Join</button>
+        </form>
+        <p class="form-note" id="newsletterNote" style="text-align:left;"></p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 RFC — Healthy Food • Healthy Life. All rights reserved.</p>
+      <p>Made for those who order in.</p>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/923146000070" target="_blank" rel="noopener" class="float-whatsapp" aria-label="Order on WhatsApp">💬</a>
+
+<script src="js/script.js"></script>
+</body>
+</html>
