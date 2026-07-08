@@ -4,99 +4,135 @@
 // Edit this array to correct any item, price or description.
 // ==========================================================================
 const CATEGORIES = [
-  'Deals','Burgers','Zinger Burgers','Wraps','Shawarma','Pizza',
-  'Paratha Rolls','Chicken','Fish','Rice','Pasta','Fries',
-  'Happy Meals','Family Meals','Combo Deals','Drinks','Special Deals'
+  'Deals','Burgers','Fries','Wraps & Rolls','Shawarma','Pizza',
+  'Chicken & Wings','Fish','Rice','Family Meals','Happy Meals',
+  'Combo Deals','Add-Ons'
 ];
 
 const MENU = [
-  // Deals
-  { id:'d1', name:'Fries & Drink Deal', cat:'Deals', price:300, desc:'Crispy golden fries with a cold drink.', img:'https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=500&q=80', badge:'Deal' },
-  { id:'d2', name:'Zinger Deal', cat:'Deals', price:430, desc:'Zinger burger paired with a chilled cold drink.', img:'https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=500&q=80', badge:'Deal' },
-  { id:'d3', name:'Deal 555', cat:'Deals', price:900, desc:'5 spicy zinger burgers with 2 cold drinks — built for sharing.', img:'https://images.unsplash.com/photo-1550547660-d9450f859349?w=500&q=80', badge:'Popular' },
-  { id:'d4', name:'Deal 666', cat:'Deals', price:800, desc:'6-piece wings bucket with 2 cold drinks.', img:'https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=500&q=80' },
+  // ---- Burgers ----
+  { id:'b1', name:'Chicken Burger', cat:'Burgers', price:350, desc:'Grilled chicken patty, lettuce and house mayo.', img:'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&q=80' },
+  { id:'b2', name:'Tikka Burger', cat:'Burgers', price:370, desc:'Spiced chicken tikka patty in a soft bun.', img:'https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=500&q=80' },
+  { id:'b3', name:'Champ Burger', cat:'Burgers', price:550, desc:'RFC\'s signature loaded champ burger.', img:'https://images.unsplash.com/photo-1550317138-10000687a72b?w=500&q=80', badge:'Best Seller' },
+  { id:'b4', name:'Double Decker Burger', cat:'Burgers', price:670, desc:'Two crispy chicken patties stacked with cheese.', img:'https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=500&q=80' },
+  { id:'b5', name:'Tower Burger', cat:'Burgers', price:600, desc:'Chicken fillet stacked with cheese and a crisp hashbrown.', img:'https://images.unsplash.com/photo-1520072959219-c595dc870360?w=500&q=80' },
+  { id:'b6', name:'Zinger Burger', cat:'Burgers', price:430, desc:'The original crispy zinger fillet, lettuce and mayo.', img:'https://images.unsplash.com/photo-1615297928064-24977384d0da?w=500&q=80', badge:'Best Seller' },
+  { id:'b7', name:'Jalapeño Zinger', cat:'Burgers', price:490, desc:'Zinger fillet loaded with jalapeños and melted cheese.', img:'https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=500&q=80', badge:'Spicy' },
+  { id:'b8', name:'Spicy Zinger', cat:'Burgers', price:460, desc:'Extra hot zinger fillet, finished with our signature sauce drizzle.', img:'assets/images/gallery/burger-sauce-closeup.jpg', badge:'Spicy' },
+  { id:'b9', name:'Fish Burger', cat:'Burgers', price:700, desc:'Golden fried fish fillet in a soft bun.', img:'https://images.unsplash.com/photo-1579208030886-b937da0925dc?w=500&q=80' },
 
-  // Burgers
-  { id:'b1', name:'Classic Chicken Burger', cat:'Burgers', price:350, desc:'Grilled chicken patty, lettuce and house mayo.', img:'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&q=80' },
-  { id:'b2', name:'RFC Tower Burger', cat:'Burgers', price:550, desc:'Chicken fillet stacked with cheese and a crisp hashbrown.', img:'https://images.unsplash.com/photo-1550317138-10000687a72b?w=500&q=80', badge:'Best Seller' },
-  { id:'b3', name:'Chatpata Burger', cat:'Burgers', price:400, desc:'Spicy chicken patty in a tangy chatpata sauce.', img:'https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=500&q=80' },
+  // ---- Fries ----
+  { id:'fr1', name:'Regular Fries', cat:'Fries', price:300, desc:'Classic golden fries, lightly salted.', img:'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=500&q=80' },
+  { id:'fr2', name:'Large Fries', cat:'Fries', price:400, desc:'A bigger portion of our classic golden fries.', img:'https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=500&q=80' },
+  { id:'fr3', name:'Family Fries', cat:'Fries', price:600, desc:'Sharing-size fries for the whole table.', img:'https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?w=500&q=80' },
+  { id:'fr4', name:'Loaded Fries', cat:'Fries', price:700, desc:'Fries loaded with cheese sauce, jalapeños and mayo.', img:'https://images.unsplash.com/photo-1585109649139-366815a0d713?w=500&q=80', badge:'Popular' },
+  { id:'fr5', name:'Curly Fries', cat:'Fries', price:750, desc:'Seasoned curly-cut fries, crispy through and through.', img:'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=500&q=80' },
+  { id:'fr6', name:'Cheesy Fries', cat:'Fries', price:800, desc:'Fries smothered in melted cheese sauce.', img:'https://images.unsplash.com/photo-1585109649139-366815a0d713?w=500&q=80' },
 
-  // Zinger Burgers
-  { id:'z1', name:'Zinger Burger', cat:'Zinger Burgers', price:430, desc:'The original crispy zinger fillet, lettuce and mayo.', img:'https://images.unsplash.com/photo-1615297928064-24977384d0da?w=500&q=80', badge:'Best Seller' },
-  { id:'z2', name:'Spicy Zinger Burger', cat:'Zinger Burgers', price:500, desc:'Extra hot zinger fillet for the heat-seekers.', img:'https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=500&q=80', badge:'Spicy' },
-  { id:'z3', name:'Jalapeño Zinger', cat:'Zinger Burgers', price:490, desc:'Zinger fillet loaded with jalapeños and melted cheese.', img:'https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=500&q=80', badge:'Spicy' },
-  { id:'z4', name:'Chipotle Zinger', cat:'Zinger Burgers', price:600, desc:'Smoky chipotle mayo over a crispy zinger fillet.', img:'https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=500&q=80' },
+  // ---- Wraps & Rolls ----
+  { id:'w1', name:'Chipotle Wrap', cat:'Wraps & Rolls', price:550, desc:'Smoky chipotle chicken rolled with fresh veggies.', img:'https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=500&q=80' },
+  { id:'w2', name:'Behari Roll', cat:'Wraps & Rolls', price:650, desc:'Spiced behari-style chicken roll, comes with a cold drink.', img:'https://images.unsplash.com/photo-1606850780554-b55ea4dd0b70?w=500&q=80' },
+  { id:'w3', name:'Paratha Roll', cat:'Wraps & Rolls', price:400, desc:'Crispy chicken wrapped in a flaky paratha.', img:'https://images.unsplash.com/photo-1628294896516-344152572ee8?w=500&q=80' },
+  { id:'w4', name:'Zinger Paratha Roll', cat:'Wraps & Rolls', price:500, desc:'Zinger fillet rolled in a warm paratha.', img:'https://images.unsplash.com/photo-1626200926749-267fc0abc8ee?w=500&q=80' },
+  { id:'w5', name:'Jumbo Paratha Roll', cat:'Wraps & Rolls', price:500, desc:'Extra-large roll, generously stuffed with chicken.', img:'https://images.unsplash.com/photo-1615361200098-c1a9f8dc4c69?w=500&q=80' },
+  { id:'w6', name:'Fish Roll', cat:'Wraps & Rolls', price:550, desc:'Golden fried fish rolled in a warm paratha.', img:'https://images.unsplash.com/photo-1615361200098-c1a9f8dc4c69?w=500&q=80' },
 
-  // Wraps
-  { id:'w1', name:'Zinger Twister Wrap', cat:'Wraps', price:500, desc:'Crispy zinger strips rolled with fresh veggies and sauce.', img:'https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=500&q=80' },
-  { id:'w2', name:'Chicken Fajita Wrap', cat:'Wraps', price:480, desc:'Grilled fajita chicken, peppers and onions in a soft wrap.', img:'https://images.unsplash.com/photo-1600850056064-a8b380df8395?w=500&q=80' },
+  // ---- Shawarma ----
+  { id:'s1', name:'Chicken Shawarma', cat:'Shawarma', price:300, desc:'Classic shawarma with garlic sauce and pickles.', img:'https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=500&q=80' },
+  { id:'s2', name:'Zinger Shawarma', cat:'Shawarma', price:450, desc:'Shawarma loaded with crispy zinger strips.', img:'https://images.unsplash.com/photo-1633321088355-d0f81134ca3b?w=500&q=80' },
+  { id:'s3', name:'Fajita Shawarma', cat:'Shawarma', price:450, desc:'Fajita-spiced chicken shawarma with extra sauce.', img:'https://images.unsplash.com/photo-1633321088355-d0f81134ca3b?w=500&q=80', badge:'Popular' },
 
-  // Shawarma
-  { id:'s1', name:'Chicken Shawarma', cat:'Shawarma', price:250, desc:'Classic shawarma with garlic sauce and pickles.', img:'https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=500&q=80' },
-  { id:'s2', name:'Special Fajita Shawarma', cat:'Shawarma', price:450, desc:'Loaded fajita-style shawarma with extra cheese.', img:'https://images.unsplash.com/photo-1633321088355-d0f81134ca3b?w=500&q=80', badge:'Popular' },
-  { id:'s3', name:'Behari Roll', cat:'Shawarma', price:650, desc:'Spiced behari beef roll served with a cold drink.', img:'https://images.unsplash.com/photo-1606850780554-b55ea4dd0b70?w=500&q=80' },
+  // ---- Chicken & Wings ----
+  { id:'c1', name:'Drum Piece', cat:'Chicken & Wings', price:220, desc:'Single crispy fried chicken drumstick.', img:'https://images.unsplash.com/photo-1626082927389-6cd097cee6a6?w=500&q=80' },
+  { id:'c2', name:'Thai Piece', cat:'Chicken & Wings', price:350, desc:'Thai-style spiced fried chicken piece.', img:'https://images.unsplash.com/photo-1562967914-608f82629710?w=500&q=80' },
+  { id:'c3', name:'Boneless Thai', cat:'Chicken & Wings', price:380, desc:'Boneless Thai-spiced chicken bites.', img:'https://images.unsplash.com/photo-1562967914-608f82629710?w=500&q=80' },
+  { id:'c4', name:'Hot Wings', cat:'Chicken & Wings', price:590, desc:'Crispy fried wings tossed in a hot glaze.', img:'https://images.unsplash.com/photo-1608039858788-b9955ab0eb4c?w=500&q=80' },
+  { id:'c5', name:'Hotshot', cat:'Chicken & Wings', price:550, desc:'Bite-sized crispy chicken poppers.', img:'https://images.unsplash.com/photo-1562967914-608f82629710?w=500&q=80' },
+  { id:'c6', name:'Nuggets', cat:'Chicken & Wings', price:650, desc:'Classic golden chicken nuggets.', img:'https://images.unsplash.com/photo-1562967914-608f82629710?w=500&q=80' },
+  { id:'c7', name:'BBQ Wings', cat:'Chicken & Wings', price:670, desc:'Smoky BBQ-glazed chicken wings.', img:'https://images.unsplash.com/photo-1608039858788-b9955ab0eb4c?w=500&q=80', badge:'Popular' },
+  { id:'c8', name:'Injected Grilled Broast (Half)', cat:'Chicken & Wings', price:900, desc:'Half chicken, marinade-injected and grilled — no fry oil.', img:'https://images.unsplash.com/photo-1598515213692-5f252f107992?w=500&q=80', badge:'No Oil' },
+  { id:'c9', name:'Injected Grilled Broast (Full)', cat:'Chicken & Wings', price:1800, desc:'Full chicken, marinade-injected and grilled — no fry oil.', img:'https://images.unsplash.com/photo-1598515213692-5f252f107992?w=500&q=80', badge:'No Oil' },
 
-  // Pizza
-  { id:'p1', name:'Chicken Tikka Pizza', cat:'Pizza', price:900, desc:'Regular pizza topped with spiced chicken tikka.', img:'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=80' },
-  { id:'p2', name:'Fajita Supreme Pizza', cat:'Pizza', price:950, desc:'Regular pizza loaded with fajita chicken and peppers.', img:'https://images.unsplash.com/photo-1601924582970-9238bcb495d9?w=500&q=80' },
+  // ---- Fish ----
+  { id:'fi1', name:'Fish Piece', cat:'Fish', price:490, desc:'Single piece of golden fried fish.', img:'https://images.unsplash.com/photo-1580217593608-61931cefc821?w=500&q=80' },
+  { id:'fi2', name:'Fish Hotshot', cat:'Fish', price:820, desc:'Bite-sized crispy fish poppers.', img:'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?w=500&q=80' },
+  { id:'fi3', name:'Fish Finger', cat:'Fish', price:850, desc:'Crispy breaded fish fingers.', img:'https://images.unsplash.com/photo-1580217593608-61931cefc821?w=500&q=80' },
+  { id:'fi4', name:'Fish N\' Chips', cat:'Fish', price:800, desc:'Crispy fish served with a side of golden fries.', img:'https://images.unsplash.com/photo-1579208030886-b937da0925dc?w=500&q=80' },
 
-  // Paratha Rolls
-  { id:'r1', name:'Chicken Paratha Roll', cat:'Paratha Rolls', price:400, desc:'Crispy chicken wrapped in a flaky paratha.', img:'https://images.unsplash.com/photo-1628294896516-344152572ee8?w=500&q=80' },
-  { id:'r2', name:'Fish Paratha Roll', cat:'Paratha Rolls', price:550, desc:'Golden fried fish rolled in a warm paratha.', img:'https://images.unsplash.com/photo-1615361200098-c1a9f8dc4c69?w=500&q=80' },
-  { id:'r3', name:'Chicken Jumbo Roll', cat:'Paratha Rolls', price:500, desc:'Extra-large roll stuffed generously with chicken.', img:'https://images.unsplash.com/photo-1626200926749-267fc0abc8ee?w=500&q=80' },
+  // ---- Rice ----
+  { id:'ri1', name:'Rice & Spice', cat:'Rice', price:500, desc:'Spiced rice bowl, comes with a cold drink.', img:'https://images.unsplash.com/photo-1596797038530-2c107229654b?w=500&q=80' },
+  { id:'ri2', name:'Fishi Rice', cat:'Rice', price:550, desc:'Signature fish-topped rice bowl.', img:'https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=500&q=80' },
 
-  // Chicken
-  { id:'c1', name:'Chicken Hot Shots (6pc)', cat:'Chicken', price:550, desc:'Bite-sized crispy chicken poppers, six pieces.', img:'https://images.unsplash.com/photo-1562967914-608f82629710?w=500&q=80' },
-  { id:'c2', name:'BBQ Wings (8pc)', cat:'Chicken', price:820, desc:'Smoky BBQ-glazed wings, eight pieces.', img:'https://images.unsplash.com/photo-1608039858788-b9955ab0eb4c?w=500&q=80', badge:'Popular' },
-  { id:'c3', name:'Chicken Drumsticks (2pc)', cat:'Chicken', price:350, desc:'Classic crispy fried drumsticks, two pieces.', img:'https://images.unsplash.com/photo-1626082927389-6cd097cee6a6?w=500&q=80' },
+  // ---- Pizza (named specialties — Regular price shown, Large in parentheses) ----
+  { id:'pz1', name:'Xtreme In Pizza', cat:'Pizza', price:1300, desc:'Loaded specialty pizza. Regular Rs.1300 / Large Rs.1800.', img:'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=80' },
+  { id:'pz2', name:'Crown Crust Pizza', cat:'Pizza', price:1300, desc:'Stuffed-crust specialty pizza. Regular Rs.1300 / Large Rs.1800.', img:'https://images.unsplash.com/photo-1601924582970-9238bcb495d9?w=500&q=80' },
+  { id:'pz3', name:'Super Mughlai Pizza', cat:'Pizza', price:1550, desc:'Rich, spiced Mughlai-style specialty pizza.', img:'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=80' },
+  { id:'pz4', name:'Special Crispy Pizza', cat:'Pizza', price:1550, desc:'Extra-crispy base specialty pizza.', img:'https://images.unsplash.com/photo-1601924582970-9238bcb495d9?w=500&q=80' },
+  // ---- Pizza (premium flavours — priced at Regular tier; Small Rs.600 / Large Rs.1550 also available) ----
+  { id:'pz5', name:'Behari Pizza', cat:'Pizza', price:1200, desc:'Small Rs.600 · Regular Rs.1200 · Large Rs.1550.', img:'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=80' },
+  { id:'pz6', name:'Bone Fire Pizza', cat:'Pizza', price:1200, desc:'Small Rs.600 · Regular Rs.1200 · Large Rs.1550.', img:'https://images.unsplash.com/photo-1601924582970-9238bcb495d9?w=500&q=80' },
+  { id:'pz7', name:'Shahi Pizza', cat:'Pizza', price:1200, desc:'Small Rs.600 · Regular Rs.1200 · Large Rs.1550.', img:'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=80' },
+  { id:'pz8', name:'Creamy Pizza', cat:'Pizza', price:1200, desc:'Small Rs.600 · Regular Rs.1200 · Large Rs.1550.', img:'https://images.unsplash.com/photo-1601924582970-9238bcb495d9?w=500&q=80' },
+  { id:'pz9', name:'Special Pizza', cat:'Pizza', price:1200, desc:'Small Rs.600 · Regular Rs.1200 · Large Rs.1550.', img:'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=80' },
+  { id:'pz10', name:'Peri Peri Pizza', cat:'Pizza', price:1200, desc:'Small Rs.600 · Regular Rs.1200 · Large Rs.1550.', img:'https://images.unsplash.com/photo-1601924582970-9238bcb495d9?w=500&q=80', badge:'Spicy' },
+  { id:'pz11', name:'Supreme Pizza', cat:'Pizza', price:1200, desc:'Small Rs.600 · Regular Rs.1200 · Large Rs.1550.', img:'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=80' },
+  { id:'pz12', name:'Super Supreme Pizza', cat:'Pizza', price:1200, desc:'Small Rs.600 · Regular Rs.1200 · Large Rs.1550.', img:'https://images.unsplash.com/photo-1601924582970-9238bcb495d9?w=500&q=80', badge:'Popular' },
+  { id:'pz13', name:'Lemon Shahi Pizza', cat:'Pizza', price:1200, desc:'Small Rs.600 · Regular Rs.1200 · Large Rs.1550.', img:'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=80' },
+  { id:'pz14', name:'Cheese Lover Pizza', cat:'Pizza', price:1200, desc:'Small Rs.600 · Regular Rs.1200 · Large Rs.1550.', img:'https://images.unsplash.com/photo-1601924582970-9238bcb495d9?w=500&q=80' },
+  { id:'pz15', name:'Pepperoni Pizza', cat:'Pizza', price:1200, desc:'Small Rs.600 · Regular Rs.1200 · Large Rs.1550.', img:'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=80' },
+  { id:'pz16', name:'Tikka Pizza', cat:'Pizza', price:1200, desc:'Small Rs.600 · Regular Rs.1200 · Large Rs.1550.', img:'https://images.unsplash.com/photo-1601924582970-9238bcb495d9?w=500&q=80' },
+  { id:'pz17', name:'Fajita Pizza', cat:'Pizza', price:1200, desc:'Small Rs.600 · Regular Rs.1200 · Large Rs.1550.', img:'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=80' },
+  { id:'pz18', name:'Fajita Sicilian Pizza', cat:'Pizza', price:1200, desc:'Small Rs.600 · Regular Rs.1200 · Large Rs.1550.', img:'https://images.unsplash.com/photo-1601924582970-9238bcb495d9?w=500&q=80' },
+  { id:'pz19', name:'Vege Lover Pizza', cat:'Pizza', price:1200, desc:'Small Rs.600 · Regular Rs.1200 · Large Rs.1550.', img:'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=80' },
+  { id:'pz20', name:'Tandoori Pizza', cat:'Pizza', price:1200, desc:'Small Rs.600 · Regular Rs.1200 · Large Rs.1550.', img:'https://images.unsplash.com/photo-1601924582970-9238bcb495d9?w=500&q=80' },
+  { id:'pz21', name:'Malai Boti Pizza', cat:'Pizza', price:1200, desc:'Small Rs.600 · Regular Rs.1200 · Large Rs.1550.', img:'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=80' },
+  { id:'pz22', name:'Cocktail Pizza', cat:'Pizza', price:1200, desc:'Small Rs.600 · Regular Rs.1200 · Large Rs.1550.', img:'https://images.unsplash.com/photo-1601924582970-9238bcb495d9?w=500&q=80' },
+  // ---- Pizza deals ----
+  { id:'pzd1', name:'3 Small Pizzas + Liter Drink', cat:'Pizza', price:1600, desc:'Three small pizzas (any flavour) with a 1L drink.', img:'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=80', badge:'Deal' },
+  { id:'pzd2', name:'2 Regular Pizzas + Liter Drink', cat:'Pizza', price:2100, desc:'Two regular pizzas (any flavour) with a 1L drink.', img:'https://images.unsplash.com/photo-1601924582970-9238bcb495d9?w=500&q=80', badge:'Deal' },
+  { id:'pzd3', name:'2 Large Pizzas + Liter Drink', cat:'Pizza', price:2900, desc:'Two large pizzas (any flavour) with a 1L drink.', img:'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=80', badge:'Deal' },
+  { id:'pzd4', name:'Midnight Small Pizza + Buddy', cat:'Pizza', price:600, desc:'11pm till close: small pizza with a Buddy drink.', img:'https://images.unsplash.com/photo-1601924582970-9238bcb495d9?w=500&q=80', badge:'Midnight' },
+  { id:'pzd5', name:'Midnight Regular Pizza + Buddy', cat:'Pizza', price:1200, desc:'11pm till close: regular pizza with a Buddy drink.', img:'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=80', badge:'Midnight' },
+  { id:'pzd6', name:'Midnight Large Pizza + Buddy', cat:'Pizza', price:1550, desc:'11pm till close: large pizza with a Buddy drink.', img:'https://images.unsplash.com/photo-1601924582970-9238bcb495d9?w=500&q=80', badge:'Midnight' },
 
-  // Fish
-  { id:'f1', name:'Fish Fillet', cat:'Fish', price:820, desc:'Golden fried fish fillet, crisp on the outside, tender inside.', img:'https://images.unsplash.com/photo-1580217593608-61931cefc821?w=500&q=80' },
-  { id:'f2', name:'Fish & Chips', cat:'Fish', price:700, desc:'Crispy fish served with a side of golden fries.', img:'https://images.unsplash.com/photo-1579208030886-b937da0925dc?w=500&q=80' },
-  { id:'f3', name:'Fish Hot Shots', cat:'Fish', price:620, desc:'Bite-sized crispy fish poppers.', img:'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?w=500&q=80' },
+  // ---- Family Meals ----
+  { id:'fm1', name:'Family Meal 1', cat:'Family Meals', price:2000, desc:'5 Zinger burgers with a 1 litre drink.', img:'https://images.unsplash.com/photo-1571091655789-405eb7a3a3a8?w=500&q=80', badge:'Family' },
+  { id:'fm2', name:'Family Meal 2', cat:'Family Meals', price:1600, desc:'5 chicken burgers with a 1 litre drink.', img:'https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?w=500&q=80', badge:'Family' },
+  { id:'fm3', name:'Family Meal 3', cat:'Family Meals', price:1000, desc:'5 drumsticks with a 1 litre drink.', img:'https://images.unsplash.com/photo-1626082927389-6cd097cee6a6?w=500&q=80', badge:'Family' },
 
-  // Rice
-  { id:'ri1', name:'Rice & Spice Deal', cat:'Rice', price:500, desc:'Spiced rice bowl served with a cold drink.', img:'https://images.unsplash.com/photo-1596797038530-2c107229654b?w=500&q=80' },
-  { id:'ri2', name:'Chicken Biryani Bowl', cat:'Rice', price:450, desc:'Fragrant biryani rice topped with spiced chicken.', img:'https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=500&q=80' },
+  // ---- Happy Meals ----
+  { id:'hm1', name:'Happy Meal 1', cat:'Happy Meals', price:650, desc:'2 drumsticks, 1 Thai piece and a Buddy drink.', img:'https://images.unsplash.com/photo-1619881589965-6db8d38d9ff0?w=500&q=80' },
+  { id:'hm2', name:'Happy Meal 2', cat:'Happy Meals', price:1600, desc:'3 Zinger burgers, large fries and a 1L drink.', img:'https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=500&q=80' },
+  { id:'hm3', name:'Happy Meal 3', cat:'Happy Meals', price:1200, desc:'2 Zinger burgers, 2 Thai pieces and 2 Buddy drinks.', img:'https://images.unsplash.com/photo-1610614819513-58e34989e371?w=500&q=80', badge:'Popular' },
 
-  // Pasta
-  { id:'pa1', name:'RFC Special Pasta', cat:'Pasta', price:750, desc:'House-special creamy pasta, served with a cold drink.', img:'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=500&q=80', badge:'Chef Pick' },
-  { id:'pa2', name:'Alfredo Chicken Pasta', cat:'Pasta', price:650, desc:'Creamy alfredo pasta tossed with grilled chicken.', img:'https://images.unsplash.com/photo-1645112411341-6c4fd023714a?w=500&q=80' },
+  // ---- Combo Deals ----
+  { id:'co1', name:'Combo 1', cat:'Combo Deals', price:650, desc:'Zinger burger, fries and a Buddy drink.', img:'https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=500&q=80' },
+  { id:'co2', name:'Combo 2', cat:'Combo Deals', price:550, desc:'Chicken burger, fries and a Buddy drink.', img:'https://images.unsplash.com/photo-1550547660-d9450f859349?w=500&q=80' },
+  { id:'co3', name:'Deal 555', cat:'Combo Deals', price:950, desc:'2 Zinger burgers, fries and 2 Buddy drinks.', img:'https://images.unsplash.com/photo-1550547660-d9450f859349?w=500&q=80', badge:'Popular' },
+  { id:'co4', name:'Deal 666', cat:'Combo Deals', price:850, desc:'2 Tikka burgers, fries and 2 Buddy drinks.', img:'https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=500&q=80' },
+  { id:'co5', name:'Mehngi Deal 1', cat:'Combo Deals', price:550, desc:'2 shawarmas with 1 Buddy drink.', img:'https://images.unsplash.com/photo-1633321088355-d0f81134ca3b?w=500&q=80' },
+  { id:'co6', name:'Mehngi Deal 2', cat:'Combo Deals', price:700, desc:'2 paratha rolls with 1 Buddy drink.', img:'https://images.unsplash.com/photo-1628294896516-344152572ee8?w=500&q=80' },
+  { id:'co7', name:'Mexican Pro', cat:'Combo Deals', price:650, desc:'Signature Mexican Pro sandwich with a 345ml drink.', img:'https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500&q=80' },
+  { id:'co8', name:'RFC Special Pasta', cat:'Combo Deals', price:750, desc:'House-special pasta with a cold drink. Price not fully legible on menu photo — please confirm.', img:'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=500&q=80', badge:'Confirm Price' },
 
-  // Fries
-  { id:'fr1', name:'Regular Fries', cat:'Fries', price:200, desc:'Classic golden fries, lightly salted.', img:'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=500&q=80' },
-  { id:'fr2', name:'Loaded Max Fries', cat:'Fries', price:500, desc:'Fries loaded with cheese sauce, jalapeños and mayo.', img:'https://images.unsplash.com/photo-1585109649139-366815a0d713?w=500&q=80', badge:'Popular' },
-  { id:'fr3', name:'Peri Peri Fries', cat:'Fries', price:300, desc:'Golden fries tossed in a fiery peri peri seasoning.', img:'https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?w=500&q=80', badge:'Spicy' },
-
-  // Happy Meals
-  { id:'hm1', name:'Happy Meal 1', cat:'Happy Meals', price:600, desc:'2 drumsticks, fries and a cold drink.', img:'https://images.unsplash.com/photo-1619881589965-6db8d38d9ff0?w=500&q=80' },
-  { id:'hm2', name:'Happy Meal 2', cat:'Happy Meals', price:900, desc:'3 drumsticks, 2 large fries and a 1.5L drink.', img:'https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=500&q=80' },
-  { id:'hm3', name:'Happy Meal 3', cat:'Happy Meals', price:1900, desc:'5 zinger burgers with a 1.5L cold drink — feeds the crew.', img:'https://images.unsplash.com/photo-1610614819513-58e34989e371?w=500&q=80', badge:'Wow' },
-
-  // Family Meals
-  { id:'fm1', name:'Family Deal 1', cat:'Family Meals', price:1500, desc:'5 zinger burgers with a 1.5L cold drink for the whole table.', img:'https://images.unsplash.com/photo-1571091655789-405eb7a3a3a8?w=500&q=80', badge:'Family' },
-  { id:'fm2', name:'Family Deal 2', cat:'Family Meals', price:1600, desc:'Zinger bucket, loaded fries and a 1.5L cold drink.', img:'https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?w=500&q=80', badge:'Family' },
-
-  // Combo Deals
-  { id:'co1', name:'Combo 1', cat:'Combo Deals', price:600, desc:'Zinger burger, fries and a cold drink.', img:'https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=500&q=80' },
-  { id:'co2', name:'Combo 2', cat:'Combo Deals', price:500, desc:'Chicken burger, fries and a cold drink.', img:'https://images.unsplash.com/photo-1550547660-d9450f859349?w=500&q=80' },
-
-  // Drinks
-  { id:'dr1', name:'Soft Drink (Regular)', cat:'Drinks', price:100, desc:'Chilled regular can of your favourite soft drink.', img:'https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=500&q=80' },
-  { id:'dr2', name:'Soft Drink (1.5L)', cat:'Drinks', price:250, desc:'Family-size 1.5L bottle, ice cold.', img:'https://images.unsplash.com/photo-1554866585-cd94860890b7?w=500&q=80' },
-  { id:'dr3', name:'Fresh Lemonade', cat:'Drinks', price:200, desc:'Freshly squeezed, lightly sweetened lemonade.', img:'https://images.unsplash.com/photo-1621263764928-df1444c5e859?w=500&q=80' },
-
-  // Special Deals
-  { id:'sp1', name:'Mexican Pro', cat:'Special Deals', price:650, desc:'Signature Mexican Pro with a 345ml drink.', img:'https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500&q=80' },
-  { id:'sp2', name:'Mehngi Deal 1', cat:'Special Deals', price:550, desc:'2 shawarmas with a cold drink.', img:'https://images.unsplash.com/photo-1633321088355-d0f81134ca3b?w=500&q=80' },
-  { id:'sp3', name:'Mehngi Deal 2', cat:'Special Deals', price:700, desc:'2 paratha rolls with a cold drink.', img:'https://images.unsplash.com/photo-1628294896516-344152572ee8?w=500&q=80' },
+  // ---- Add-Ons ----
+  { id:'ad1', name:'Buddy (350ml Drink)', cat:'Add-Ons', price:90, desc:'Priced Rs.90 on the burger menu but Rs.60 on the pizza menu — please confirm the correct price.', img:'https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=500&q=80', badge:'Confirm Price' },
+  { id:'ad2', name:'Liter Drink', cat:'Add-Ons', price:100, desc:'1 litre bottle, ice cold.', img:'https://images.unsplash.com/photo-1554866585-cd94860890b7?w=500&q=80' },
+  { id:'ad3', name:'1.5 Liter Drink', cat:'Add-Ons', price:210, desc:'Family-size 1.5L bottle, ice cold.', img:'https://images.unsplash.com/photo-1554866585-cd94860890b7?w=500&q=80' },
+  { id:'ad4', name:'Dip Sauce', cat:'Add-Ons', price:100, desc:'Extra portion of your favourite dip.', img:'https://images.unsplash.com/photo-1613844237701-8f3664fc2eff?w=500&q=80' },
+  { id:'ad5', name:'Dinner Roll', cat:'Add-Ons', price:100, desc:'Warm dinner roll on the side.', img:'https://images.unsplash.com/photo-1608198093002-ad4e005484ec?w=500&q=80' },
+  { id:'ad6', name:'Cheese Slice', cat:'Add-Ons', price:100, desc:'Extra cheese slice add-on.', img:'https://images.unsplash.com/photo-1631206753348-db44968fd440?w=500&q=80' },
 ];
 
 const GALLERY_IMAGES = [
-  { src:'assets/images/gallery-burger-sauce.png', alt:'Crispy chicken burger drizzled with signature RFC sauce' },
-  { src:'assets/images/gallery-storefront.png', alt:'RFC storefront signage at dusk' },
-  { src:'assets/images/gallery-interior.png', alt:'RFC dine-in seating area' },
-  { src:'assets/images/gallery-dinein-entrance.png', alt:'RFC dine-in entrance at night' },
+  'assets/images/restaurant/exterior-storefront.jpg',
+  'assets/images/restaurant/dine-in-entrance.jpg',
+  'assets/images/restaurant/dine-in-interior.jpg',
+  'assets/images/gallery/burger-sauce-closeup.jpg',
+  'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=700&q=80',
+  'https://images.unsplash.com/photo-1550317138-10000687a72b?w=700&q=80',
+  'https://images.unsplash.com/photo-1608039858788-b9955ab0eb4c?w=700&q=80',
+  'https://images.unsplash.com/photo-1601924582970-9238bcb495d9?w=700&q=80',
 ];
 
 // ==========================================================================
@@ -129,7 +165,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initReservationForm();
   initNewsletter();
   initSmoothAnchors();
-  initCategoryJumps();
 });
 
 /* ---------------- Loader ---------------- */
@@ -162,6 +197,15 @@ function initNavbar(){
       navLinks.classList.remove('open');
       navToggle.classList.remove('open');
       document.body.classList.remove('no-scroll');
+    });
+  });
+
+  // Any link with data-cat (nav or footer) jumps to the menu section AND
+  // pre-selects that category chip, instead of relying on a dead #deals anchor.
+  document.querySelectorAll('a[data-cat]').forEach(link => {
+    link.addEventListener('click', () => {
+      const chip = document.querySelector(`.cat-chip[data-cat="${link.dataset.cat}"]`);
+      if (chip) chip.click();
     });
   });
 
@@ -459,8 +503,8 @@ function renderCart(){
 /* ---------------- Gallery + Lightbox ---------------- */
 function initGallery(){
   const grid = document.getElementById('galleryGrid');
-  grid.innerHTML = GALLERY_IMAGES.map(({ src, alt }) =>
-    `<div class="gallery-item reveal" data-src="${src}"><img src="${src}" alt="${alt}" loading="lazy"></div>`
+  grid.innerHTML = GALLERY_IMAGES.map((src, i) =>
+    `<div class="gallery-item reveal" data-src="${src}"><img src="${src}" alt="RFC gallery photo ${i+1}" loading="lazy"></div>`
   ).join('');
 
   const lightbox = document.getElementById('lightbox');
@@ -572,17 +616,6 @@ function initSmoothAnchors(){
       e.preventDefault();
       const top = target.getBoundingClientRect().top + window.pageYOffset - 78;
       window.scrollTo({ top, behavior:'smooth' });
-    });
-  });
-}
-
-/* ---------------- "Deals" links jump into the menu pre-filtered ---------------- */
-function initCategoryJumps(){
-  document.querySelectorAll('[data-cat-jump]').forEach(link => {
-    link.addEventListener('click', () => {
-      const cat = link.dataset.catJump;
-      const chip = document.querySelector(`.cat-chip[data-cat="${cat}"]`);
-      if (chip) chip.click();
     });
   });
 }
